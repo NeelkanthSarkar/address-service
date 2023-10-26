@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 HELP.md
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -15,4 +16,5 @@ target/
 mvnw
 mvnw.cmd
 src/test
+
 
