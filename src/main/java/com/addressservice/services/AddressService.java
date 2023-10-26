@@ -20,7 +20,7 @@ public class AddressService {
 	private AddressRepo addressRepo;
 	
 	
-    //method to get all the addresses available currently
+	//method to get all the addresses available currently
 	public ResponseEntity<List<AddressResponse>> getAllAddressAvailable(){
 		
 		List<AddressResponse> listOfAddressResponse = addressRepo.findAll()
