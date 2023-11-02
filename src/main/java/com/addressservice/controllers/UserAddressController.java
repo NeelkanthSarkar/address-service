@@ -14,6 +14,8 @@ import com.addressservice.entity.Address;
 import com.addressservice.services.AddressService;
 import com.addressservice.utils.AddressResponse;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class UserAddressController {
 	
@@ -27,7 +29,7 @@ public class UserAddressController {
 	}
 	
 	@PostMapping("/address")
-	public ResponseEntity<AddressResponse> saveNewAddress(@RequestBody Address address) {
+	public ResponseEntity<AddressResponse> saveNewAddress(@Valid @RequestBody Address address) {
 		return addressService.saveNewAddressOfUser(address); 
 	}
 	
